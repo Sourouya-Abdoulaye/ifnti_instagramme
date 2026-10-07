@@ -1,0 +1,20 @@
+{
+  "name": "malik_instagramme",
+  "version": "1.0.0",
+  "description": "introduction à node.js",
+  "homepage": "https://github.com/Sourouya-Abdoulaye/ifnti_instagramme#readme",
+  "bugs": {
+    "url": "https://github.com/Sourouya-Abdoulaye/ifnti_instagramme/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sourouya-Abdoulaye/ifnti_instagramme.git"
+  },
+  "license": "MIT",
+  "author": "Hack le dev",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
