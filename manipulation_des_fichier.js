@@ -78,6 +78,7 @@ function lire_un_fichier_en_stream(path) {
     const flux_de_lecture = createReadStream(path,"utf-8")
     // console.log(flux_de_lecture);
 
+
     let message_complet=" ";
 
     // on n'invoque la methode on qui nous permet d'ecouter les evenement (il existe plusieur) 
