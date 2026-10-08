@@ -1,10 +1,11 @@
+import fs from "node:fs"
 
-import  {math,somme} from './math.js'
+
 
 // let math=require("./math.mjs")
-console.log(math())
+console.log(fs)
 
-console.log(somme)
+
 
 
 
