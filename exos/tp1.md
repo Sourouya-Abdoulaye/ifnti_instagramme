@@ -1,6 +1,7 @@
 # Exo 1
 ## creer une methode (Analyse file,)
     sous function: de test
+
         getstats,
         getphrase,
         getchunkCount,
@@ -24,3 +25,4 @@
     - nbr phrase,
     - nbr mots ,
     - nbr lettre
+    - nbr chunk

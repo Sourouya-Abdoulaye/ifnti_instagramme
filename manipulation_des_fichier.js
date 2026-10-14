@@ -1,6 +1,6 @@
-import { log } from "node:console"
 import fs from "node:fs/promises"
 import { createReadStream, createWriteStream } from "node:fs"
+import { getLetterCount } from "./Tps/tp1/analyse_file";
 
 async function lire_un_fichier(path) {
     try {
@@ -21,7 +21,7 @@ async function ecrire_dans_un_fichier(path) {
 
         let content;
         for (let index = 0; index <= (10000); index++) {
-            content += "contenue " + index + "\n"
+            content += "contenue 1\n"
         }
         // pour atttendre 
         const data = await fs.writeFile(path, content, {
@@ -59,7 +59,9 @@ async function write_and_read_file(path) {
 
 }
 
-// statistique_file("files/fichier1.txt");
+statistique_file("files/fichier1.txt");
+
+
 
 async function statistique_file(path) {
 
@@ -74,8 +76,24 @@ async function statistique_file(path) {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function lire_un_fichier_en_stream(path) {
-    const flux_de_lecture = createReadStream(path,"utf-8")
+    const flux_de_lecture = createReadStream(path)
     // console.log(flux_de_lecture);
 
 
@@ -84,7 +102,7 @@ function lire_un_fichier_en_stream(path) {
     // on n'invoque la methode on qui nous permet d'ecouter les evenement (il existe plusieur) 
     flux_de_lecture.on('data', (chunk) => {
         console.log("================================================");
-        // console.log(chunk.length);
+         console.log(chunk);
         message_complet +="=========================\n"+chunk
         console.log("================================================");
 
@@ -92,8 +110,9 @@ function lire_un_fichier_en_stream(path) {
     })
 
     flux_de_lecture.on("end", () => {
-         console.log("End flux de lecture.....")
-        console.log(message_complet)
+        // getLetterCount(message_complet);
+        //  console.log("End flux de lecture.....")
+        // console.log(message_complet)
     })
 
 
